@@ -99,7 +99,7 @@ class PointcutMatchingPass implements CompilerPassInterface
             return;
         }
 
-        if ($definition->getFactoryService() || $definition->getFactoryClass()) {
+        if ($definition->getFactoryService() || $definition->getFactory()) {
             return;
         }
 
